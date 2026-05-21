@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | IT &amp; Cybersecurity LLP</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .dot-grid {
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(30, 41, 59, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: #64FFDA;
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.1);
+            transform: translateY(-4px);
+        }
+        .cyber-glow {
+            box-shadow: 0 0 15px rgba(65, 228, 192, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes pulse-subtle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.95); }
+        }
+        .live-indicator {
+            animation: pulse-subtle 2s infinite ease-in-out;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#b9c7e4",
+                    "on-secondary-fixed-variant": "#005142",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-error-container": "#ffdad6",
+                    "primary-container": "#0a192f",
+                    "tertiary-fixed-dim": "#b6c6ed",
+                    "on-surface": "#d4e4fa",
+                    "tertiary-container": "#061836",
+                    "surface-dim": "#051424",
+                    "on-secondary": "#00382d",
+                    "on-tertiary-fixed": "#091b39",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-bright": "#2c3a4c",
+                    "on-tertiary": "#20304f",
+                    "inverse-primary": "#515f78",
+                    "on-primary": "#233148",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "surface-container-high": "#1c2b3c",
+                    "surface-variant": "#273647",
+                    "on-tertiary-container": "#7282a5",
+                    "surface-container-highest": "#273647",
+                    "on-secondary-fixed": "#002019",
+                    "on-error": "#690005",
+                    "outline": "#8f9097",
+                    "secondary-fixed-dim": "#38debb",
+                    "secondary-container": "#00c7a5",
+                    "secondary": "#41e4c0",
+                    "on-surface-variant": "#c5c6cd",
+                    "error-container": "#93000a",
+                    "outline-variant": "#44474d",
+                    "inverse-surface": "#d4e4fa",
+                    "on-primary-container": "#74829d",
+                    "surface-container-lowest": "#010f1f",
+                    "tertiary": "#b6c6ed",
+                    "surface-container": "#122131",
+                    "surface": "#051424",
+                    "inverse-on-surface": "#233143",
+                    "tertiary-fixed": "#d8e2ff",
+                    "secondary-fixed": "#5ffbd6",
+                    "on-background": "#d4e4fa",
+                    "on-tertiary-fixed-variant": "#374767",
+                    "on-secondary-container": "#004d3f",
+                    "on-primary-fixed-variant": "#39475f",
+                    "background": "#051424",
+                    "surface-tint": "#b9c7e4",
+                    "surface-container-low": "#0d1c2d",
+                    "error": "#ffb4ab"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Geist"],
+                    "headline-xl-mobile": ["Geist"],
+                    "label-md": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Geist"],
+                    "headline-md": ["Geist"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-xl": ["Geist"],
+                    "body-sm": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-xl": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background dot-grid">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface">
+                IT &amp; Cybersecurity LLP
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary border-b-2 border-secondary pb-1" href="services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="about.html">About &amp; Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="sectors.html">Sectors &amp; Technology</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="contact.html">Contact</a>
+</div>
+<a href="contact.html"><button class="bg-secondary text-on-secondary-container px-6 py-2 font-label-md text-label-md rounded-lg cyber-glow active:scale-95 transition-transform duration-150">
+                Get Audit
+            </button></a>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-16">
+<!-- Hero Section -->
+<section class="mb-20 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary live-indicator"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Global Expertise · Local Defense</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl mb-6 max-w-4xl">
+                Comprehensive Technology Services
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                From cybersecurity defence to digital transformation — we offer a full spectrum of IT and advisory services tailored for modern enterprises, government bodies, and startups.
+            </p>
+<div class="h-[1px] w-full bg-gradient-to-r from-secondary/50 via-outline-variant/30 to-transparent"></div>
+</section>
+<!-- Services Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- 1. Cybersecurity Audit -->
+<div class="md:col-span-8 glass-card p-8 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 0;">verified_user</span>
+<span class="font-label-sm text-label-sm text-outline">SERVICE_ID: 01</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Cybersecurity Audit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-xl">
+                        Rigorous technical assessments to validate compliance and identify architectural vulnerabilities before they are exploited.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1 bg-surface-variant/50 border border-outline-variant/30 rounded font-label-sm text-label-sm">ISO 27001</span>
+<span class="px-3 py-1 bg-surface-variant/50 border border-outline-variant/30 rounded font-label-sm text-label-sm">VAPT</span>
+<span class="px-3 py-1 bg-surface-variant/50 border border-outline-variant/30 rounded font-label-sm text-label-sm">Compliance Readiness</span>
+<span class="px-3 py-1 bg-surface-variant/50 border border-outline-variant/30 rounded font-label-sm text-label-sm">Risk Assessment</span>
+</div>
+</div>
+</div>
+<!-- 2. Cyber Defence -->
+<div class="md:col-span-4 glass-card p-8 relative overflow-hidden group">
+<div class="absolute inset-0 opacity-10 pointer-events-none transition-opacity group-hover:opacity-20">
+<img class="w-full h-full object-cover" data-alt="Close-up of high-speed data center blinking lights and networking cables in a deep blue server room. The lighting is cold and clinical, emphasizing high-performance technology and cybersecurity infrastructure. The atmosphere is quiet, technical, and intensely focused on security and continuous uptime." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3m3VWC-JK-9xRpK01mqdY9PP-SWPjYygQCMSoK33K5My_0-hOxj0OaKxgshiVzlPbXRP2nC6RLI2R5XYp_I3xLkRdHUTVYw6-wVeGtArhpmsy8kwQLqzYOiFSKFf1dc4dvWYgju7xKcqkd967I5kK0OADjzVaeO5y7rvvOSAdtXDQusyqInDcvzUDOHyJhX8kEtFRrjMoT4enTaWM6If5F1dyCFIR8dd400YZxhA_-SeyDY5W6HqWX-GG2bPVs690HJpsd8bgYIA"/>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">shield</span>
+<h3 class="font-headline-md text-headline-md mb-4">Cyber Defence</h3>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> 24/7 SOC Operations</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Threat Intelligence</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> EDR/XDR Integration</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Perimeter Protection</li>
+</ul>
+</div>
+</div>
+<!-- 3. Digital Forensics -->
+<div class="md:col-span-4 glass-card p-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">android_fingerprint</span>
+<h3 class="font-headline-md text-headline-md mb-4">Digital Forensics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                    Professional investigation and preservation of digital evidence for litigation and incident response.
+                </p>
+<div class="space-y-2">
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span class="font-label-sm text-label-sm">Evidence Collection</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span class="font-label-sm text-label-sm">Chain of Custody</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="font-label-sm text-label-sm">Expert Testimony</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- 4. Software Development -->
+<div class="md:col-span-8 glass-card p-8 bg-gradient-to-br from-tertiary-container/30 to-surface">
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">code</span>
+<h3 class="font-headline-md text-headline-md mb-4">Software Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Custom enterprise architecture designed for scalability, performance, and native security.
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded border border-outline-variant/30 bg-surface/40">
+<div class="font-label-md text-label-md text-secondary mb-1">ERP</div>
+<div class="font-body-sm text-body-sm text-outline">Business flow</div>
+</div>
+<div class="p-4 rounded border border-outline-variant/30 bg-surface/40">
+<div class="font-label-md text-label-md text-secondary mb-1">SaaS</div>
+<div class="font-body-sm text-body-sm text-outline">Cloud native</div>
+</div>
+<div class="p-4 rounded border border-outline-variant/30 bg-surface/40">
+<div class="font-label-md text-label-md text-secondary mb-1">Mobile</div>
+<div class="font-body-sm text-body-sm text-outline">iOS &amp; Android</div>
+</div>
+<div class="p-4 rounded border border-outline-variant/30 bg-surface/40">
+<div class="font-label-md text-label-md text-secondary mb-1">API</div>
+<div class="font-body-sm text-body-sm text-outline">Integrations</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Web Design & ITES -->
+<div class="md:col-span-4 glass-card p-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">web</span>
+<h3 class="font-headline-md text-headline-md mb-4">Web Design &amp; ITES</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                    Elevating brand identity through high-performance corporate sites and managed BPO services.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] font-label-sm uppercase tracking-tighter bg-on-secondary-fixed-variant text-secondary-fixed px-2 py-0.5 rounded">UI/UX Strategy</span>
+<span class="text-[10px] font-label-sm uppercase tracking-tighter bg-on-secondary-fixed-variant text-secondary-fixed px-2 py-0.5 rounded">BPO Ops</span>
+</div>
+</div>
+<!-- 6. Data Centre Development -->
+<div class="md:col-span-4 glass-card p-8 border-l-4 border-l-secondary">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">dns</span>
+<h3 class="font-headline-md text-headline-md mb-4">Data Centre Dev</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                    End-to-end lifecycle management of physical and virtual infrastructure.
+                </p>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="text-secondary font-label-sm">01</span>
+<span class="font-body-sm">Architectural Design</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-secondary font-label-sm">02</span>
+<span class="font-body-sm">Modular Build</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-secondary font-label-sm">03</span>
+<span class="font-body-sm">Managed Operations</span>
+</div>
+</div>
+</div>
+<!-- 7. System Integration & Automation -->
+<div class="md:col-span-4 glass-card p-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">smart_toy</span>
+<h3 class="font-headline-md text-headline-md mb-4">Automation &amp; IoT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                    Harmonizing disparate systems through RPA and industrial IoT sensors.
+                </p>
+<div class="bg-surface-container-low p-4 rounded-lg font-label-sm text-label-sm text-secondary border border-secondary/10">
+<span class="block mb-1">STATUS: OPERATIONAL</span>
+<span class="text-on-surface-variant text-[11px] block">Connecting 5,000+ Endpoints</span>
+</div>
+</div>
+<!-- 8. IT Training -->
+<div class="md:col-span-6 glass-card p-8 group">
+<div class="flex items-start justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">school</span>
+<h3 class="font-headline-md text-headline-md mb-4">IT Training</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Certified programs designed to upskill technical staff in cybersecurity and system administration.
+                        </p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm">Accredited</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm">Hands-on Labs</span>
+</div>
+</div>
+</div>
+<div class="hidden lg:block w-32 h-32 opacity-20 group-hover:opacity-40 transition-opacity">
+<img class="w-full h-full object-cover rounded-full" data-alt="A focused educational setting featuring high-end laptops with terminal screens visible. Soft, ambient blue lighting illuminates a modern classroom designed for technical training. The aesthetic is clean, professional, and reflects a high-level corporate learning environment for cybersecurity professionals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvKW5qYhuBEETE4uqCAKx353D5zRU6FOArhJyDkep158yhG0plDjDfPflsGBsDTrJV8r_PU1FgdzUZTnIAV6MB9YsUpY_f2UX-SsDLVK2DiorCCIEYSS7YrXC0S_7MllbI7C0CR6nwk9abMv_QRLlJrgjvIcoGpXuziP2qXCJNOkUbLObh3USkP8xpYHKIrm_fhUnHuX9lX2KHiAYAKyEYK_U-600MGQsfoZ2kreGIgDBAQvO-xkNH89zK4-kCyYTL6eRr8dPF8xw"/>
+</div>
+</div>
+</div>
+<!-- 9. Technical Consultancy -->
+<div class="md:col-span-6 glass-card p-8 border-r-4 border-r-secondary">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">engineering</span>
+<h3 class="font-headline-md text-headline-md mb-4">Technical Consultancy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Strategic oversight and PMO services to ensure technology investments align with business objectives.
+                </p>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant py-2 font-label-sm hover:border-secondary hover:text-secondary transition-all">STRATEGY</button>
+<button class="border border-outline-variant py-2 font-label-sm hover:border-secondary hover:text-secondary transition-all">PMO</button>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-24 p-12 glass-card rounded-xl text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-secondary/5 to-transparent pointer-events-none"></div>
+<h2 class="font-headline-lg text-headline-lg mb-4 relative z-10">Ready to secure your digital future?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-2xl mx-auto relative z-10">
+                Partner with our experts to build a resilient, efficient, and forward-thinking IT infrastructure.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+<a href="contact.html"><button class="bg-secondary text-on-secondary-container px-8 py-3 rounded-lg font-label-md hover:cyber-glow transition-all">Schedule Consultation</button></a>
+<button class="border border-secondary text-secondary px-8 py-3 rounded-lg font-label-md hover:bg-secondary/10 transition-all">Download Services PDF</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 full-width bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface mb-4">IT &amp; Cybersecurity LLP</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Secure Intelligence Defined. Global standards for local defense.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<div class="font-label-md text-label-md text-primary mb-2">Capabilities</div>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="services.html">SOC Operations</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="services.html">VAPT Testing</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="services.html">Cloud Security</a>
+</div>
+<div class="flex flex-col space-y-3">
+<div class="font-label-md text-label-md text-primary mb-2">Legal</div>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="#">Security Disclosure</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary hover:underline decoration-secondary underline-offset-4 transition-all" href="#">Compliance</a>
+</div>
+<div class="flex flex-col space-y-3">
+<div class="font-label-md text-label-md text-primary mb-2">Headquarters</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tech Plaza, Silicon District<br/>Cyber Hub, 100210</p>
+<p class="font-label-sm text-label-sm text-secondary mt-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary live-indicator"></span> System Status: All Systems Operational
+                </p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-outline-variant/10">
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-60">© 2024 IT &amp; Cybersecurity LLP. Secure Intelligence Defined.</p>
+</div>
+</footer>
+<script>
+        // Subtle hover interaction logic
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

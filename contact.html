@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | IT &amp; Cybersecurity LLP</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #051424;
+            background-image: radial-gradient(circle at 2px 2px, rgba(30, 41, 59, 0.5) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+        .glass-card {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(30, 41, 59, 0.5);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(100, 255, 218, 0.15);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#b9c7e4",
+                        "on-secondary-fixed-variant": "#005142",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#0a192f",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "on-surface": "#d4e4fa",
+                        "tertiary-container": "#061836",
+                        "surface-dim": "#051424",
+                        "on-secondary": "#00382d",
+                        "on-tertiary-fixed": "#091b39",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-bright": "#2c3a4c",
+                        "on-tertiary": "#20304f",
+                        "inverse-primary": "#515f78",
+                        "on-primary": "#233148",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "surface-container-high": "#1c2b3c",
+                        "surface-variant": "#273647",
+                        "on-tertiary-container": "#7282a5",
+                        "surface-container-highest": "#273647",
+                        "on-secondary-fixed": "#002019",
+                        "on-error": "#690005",
+                        "outline": "#8f9097",
+                        "secondary-fixed-dim": "#38debb",
+                        "secondary-container": "#00c7a5",
+                        "secondary": "#41e4c0",
+                        "on-surface-variant": "#c5c6cd",
+                        "error-container": "#93000a",
+                        "outline-variant": "#44474d",
+                        "inverse-surface": "#d4e4fa",
+                        "on-primary-container": "#74829d",
+                        "surface-container-lowest": "#010f1f",
+                        "tertiary": "#b6c6ed",
+                        "surface-container": "#122131",
+                        "surface": "#051424",
+                        "inverse-on-surface": "#233143",
+                        "tertiary-fixed": "#d8e2ff",
+                        "secondary-fixed": "#5ffbd6",
+                        "on-background": "#d4e4fa",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "on-secondary-container": "#004d3f",
+                        "on-primary-fixed-variant": "#39475f",
+                        "background": "#051424",
+                        "surface-tint": "#b9c7e4",
+                        "surface-container-low": "#0d1c2d",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Geist"],
+                        "label-md": ["JetBrains Mono"],
+                        "headline-md": ["Geist"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-xl": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-xl": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface" href="index.html">
+                IT &amp; Cybersecurity LLP
+            </a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="about.html">About &amp; Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary transition-colors duration-200" href="sectors.html">Sectors &amp; Technology</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary border-b-2 border-secondary pb-1" href="contact.html">Contact</a>
+</nav>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-label-md hover:bg-secondary transition-all active:scale-95">
+                Get Audit
+            </button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<!-- Hero Heading -->
+<section class="mb-16">
+<div class="flex items-center gap-4 mb-4">
+<div class="h-[1px] w-12 bg-secondary"></div>
+<span class="font-label-md text-secondary uppercase tracking-widest">Global Security Partners</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface max-w-3xl">
+                Let's Start a Conversation
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-6 max-w-2xl">
+                Ready to fortify your digital infrastructure? Contact our specialist engineering team to discuss your security posture and compliance requirements.
+            </p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Section 1: Contact Form -->
+<div class="lg:col-span-7">
+<div class="glass-card p-8 rounded-xl">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6" onsubmit="event.preventDefault(); alert('Transmission Received. Secure channel established.');">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-on-surface-variant">FULL NAME</label>
+<input class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-on-surface-variant">ORGANISATION</label>
+<input class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none" placeholder="Acme Corp" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-on-surface-variant">BUSINESS EMAIL</label>
+<input class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none" placeholder="j.doe@acme.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-on-surface-variant">PHONE NUMBER</label>
+<input class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none" placeholder="+91 000 000 0000" type="tel"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-on-surface-variant">SERVICE REQUIRED</label>
+<select class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none appearance-none">
+<option>Cybersecurity Audit</option>
+<option>Network Infrastructure</option>
+<option>Cloud Security Strategy</option>
+<option>Compliance &amp; Risk Management</option>
+<option>Incident Response</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-on-surface-variant">BUDGET RANGE</label>
+<select class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none appearance-none">
+<option>Select Range</option>
+<option>$10k - $25k</option>
+<option>$25k - $50k</option>
+<option>$50k - $100k</option>
+<option>$100k+</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label-sm text-on-surface-variant">MESSAGE</label>
+<textarea class="bg-surface border-outline-variant/30 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary rounded p-3 transition-all outline-none resize-none" placeholder="Brief description of your security requirements..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2 pt-4">
+<button class="w-full bg-secondary text-on-secondary font-label-md py-4 rounded-lg glow-hover transition-all flex items-center justify-center gap-3" type="submit">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+                                INITIATE SECURE INQUIRY
+                            </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Section 2: Reach Us -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Address Card -->
+<div class="glass-card p-8 rounded-xl flex flex-col gap-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">hub</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md mb-6">Reach Us</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<div>
+<p class="font-label-md text-secondary mb-1">GLOBAL HQ</p>
+<p class="font-body-md text-on-surface-variant">Cyber Towers, Level 14, Phase II<br/>HITEC City, Hyderabad, 500081<br/>India</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">alternate_email</span>
+<div>
+<p class="font-label-md text-secondary mb-1">EMAILS</p>
+<p class="font-body-md text-on-surface-variant">General: contact@itcyberllp.com<br/>Support: secure@itcyberllp.com</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">call</span>
+<div>
+<p class="font-label-md text-secondary mb-1">PHONE</p>
+<p class="font-body-md text-on-surface-variant">+91 (40) 4500 8900<br/>+91 (0) 900 800 7000</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<div>
+<p class="font-label-md text-secondary mb-1">WORKING HOURS</p>
+<p class="font-body-md text-on-surface-variant">Mon — Fri: 09:00 - 18:00 IST<br/>24/7 Monitoring for SOC Clients</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/20">
+<div class="bg-secondary/10 border border-secondary/20 p-4 rounded flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">public</span>
+<p class="font-label-sm text-secondary">Service Reach: India-wide · International Engagements Welcome</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="glass-card rounded-xl overflow-hidden h-[240px] relative">
+<img class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="A stylized, technical map of a metropolitan tech hub at night with glowing data nodes and interconnected circuits overlaying the street grid. The color palette is dark navy and cyber blue, reflecting a high-security and advanced technological environment. Subtle light trails represent data flow between major data centers and office towers." data-location="Hyderabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo2a6-3QjXdSPhzOqS-yw3xA4XYakTFkgX-AZxFFTTlpwATk979bjAY4SjzIhaDZtlMJlzQfu_yA6-5ENdrvm4SeHUo0VP-7Cc__vGkNi_JCGj0B198O3gYZNYZX2TTGMYc1jixYkDZ9WNsnUVpBNPOgf3_Ul7-Fs_G9qS1HtwSHfo3XfbwceEnPuaPgnxBl8EZIVM2blDXMSt88o8PV6HhUEFW5bTPTCqgl6q3RyzXhGjgOa9hlEqKEFQgTUzLt_uD0_2_DqDFcs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+<span class="font-label-sm text-secondary">LIVE FROM HYDERABAD</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<a class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface" href="index.html">IT &amp; Cybersecurity LLP</a>
+<p class="mt-4 font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+                    Advanced threat intelligence and cybersecurity architecture for the modern enterprise.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-secondary">LEGAL</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors hover:underline decoration-secondary underline-offset-4" href="about.html">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors hover:underline decoration-secondary underline-offset-4" href="about.html">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-secondary">SECURITY</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors hover:underline decoration-secondary underline-offset-4" href="contact.html">Security Disclosure</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors hover:underline decoration-secondary underline-offset-4" href="sectors.html">Compliance</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-secondary">CONNECT</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 IT &amp; Cybersecurity LLP.<br/>Secure Intelligence Defined.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for form focus
+        document.querySelectorAll('input, select, textarea').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.querySelector('label').style.color = '#41e4c0';
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.querySelector('label').style.color = '';
+            });
+        });
+    </script>
+</body></html>
